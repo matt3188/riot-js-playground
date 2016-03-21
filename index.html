@@ -13,7 +13,7 @@
   <script src="tags/contact-list.tag" type="riot/tag"></script>
 
   <script>
-    riot.mount('contact-list')
+    var peeps = [{first: "John", last: "Doe"},{first: "Sally", last: "Smith"}]
     riot.mount('contact-list', { callback: tagCallback, people: peeps })
 
     function tagCallback() {
