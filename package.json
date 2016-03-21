@@ -1,0 +1,27 @@
+{
+  "name": "riot-js",
+  "version": "1.0.0",
+  "description": "Riot playground to learn riot js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt3188/riot-js-playground.git"
+  },
+  "keywords": [
+    "Riot",
+    "JS"
+  ],
+  "author": "Matt Coleman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matt3188/riot-js-playground/issues"
+  },
+  "homepage": "https://github.com/matt3188/riot-js-playground#readme",
+  "devDependencies": {
+    "lite-server": "^2.1.0"
+  }
+}

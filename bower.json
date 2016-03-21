@@ -1,0 +1,28 @@
+{
+  "name": "riot-js",
+  "description": "Riot playground to learn riot js",
+  "main": "index.html",
+  "authors": [
+    "Matt Coleman"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Riot",
+    "JS"
+  ],
+  "homepage": "https://github.com/matt3188/riot-js-playground",
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "riot": "^2.3.17"
+  }
+}
