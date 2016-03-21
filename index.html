@@ -13,19 +13,20 @@
   <script src="tags/contact-list.tag" type="riot/tag"></script>
 
   <script>
-    var peeps = [{first: "John", last: "Doe"},{first: "Sally", last: "Smith"}]
-    riot.mount('contact-list', { callback: tagCallback, people: peeps })
+    riot.mount('contact-list', { callback: tagCallback })
 
-    function tagCallback() {
+    function tagCallback(theTag) {
       console.log('Callback executed')
+
       var request = new XMLHttpRequest()
       request.open('GET', 'people.json', true)
       request.onload = function() {
-        if(request .statys == 200) {
-          var data = KSON.parse(request.responseText)
-          //TODO: Get data into tag
+        if(request.status == 200) {
+          var data = JSON.parse(request.responseText)
+          theTag.trigger('data_loaded', data.people)
         }
       }
+      
       request.send()
     }
   </script>
