@@ -14,6 +14,11 @@
 
   <script>
     riot.mount('contact-list')
+    riot.mount('contact-list', { callback: tagCallback, people: peeps })
+
+    function tagCallback() {
+      console.log('Callback executed')
+    }
   </script>
 </body>
 </html>
