@@ -18,6 +18,15 @@
 
     function tagCallback() {
       console.log('Callback executed')
+      var request = new XMLHttpRequest()
+      request.open('GET', 'people.json', true)
+      request.onload = function() {
+        if(request .statys == 200) {
+          var data = KSON.parse(request.responseText)
+          //TODO: Get data into tag
+        }
+      }
+      request.send()
     }
   </script>
 </body>
